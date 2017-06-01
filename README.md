@@ -1,5 +1,5 @@
 #### 安装
-webpack版本是1.14.0
+webpack版本是1.14.0,项目配置参考https://doc.webpack-china.org/concepts/
 ```shell
 npm init
 npm install --save-dev webpack
@@ -28,7 +28,7 @@ exports.chunk1=chunk1;
 ```
 
 #### 生成后的代码
-// 执行模块，将模块内的方法暴露在exports变量中
+// 执行模块，将模块内的方法暴露在exports变量中<br>
 modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 上面这段代码后，module.export变量被改变，方法里要暴露的东西全在里面。然后通过__webpack_require__返回。
 ```javasciprt
